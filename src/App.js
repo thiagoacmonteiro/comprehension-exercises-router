@@ -15,7 +15,7 @@ class App extends Component {
         {/* Exercise 3: Create a route to 'About' */}
         <Route path="/about" component={ About } />
         {/* Exercise 5: Create a route to 'Users' */}
-        <Route path="/users" render={(props) => <Users { ...props } greetingsMessage="Good Morning!" /> } /> {/* Exercise 8: Assign a string to the param 'greetingsMessage' to be seen by 'Users' */}
+        <Route path="/users/:id" render={(props) => <Users { ...props } greetingsMessage="Good Morning!" /> } /> {/* Exercise 8: Assign a string to the param 'greetingsMessage' to be seen by 'Users' */}
         {/* Exercise 6: Create links to 'About' and 'Users' */}
         <Link to="/about">About </Link>
         <Link to="/users">Users</Link>
