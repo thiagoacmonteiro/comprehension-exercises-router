@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         {/* Exercise 2: Create a route to Home */}
-        <Route path="/" component={ Home } />
+        <Route path exact="/" component={ Home } /> {/* Exercise 4: Change the way of routing for 'Home' to avoid rendering another component */}
         {/* Exercise 3: Create a route to About */}
         <Route path="/about" component={ About } />
       </BrowserRouter>
