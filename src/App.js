@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import Users from './components/Users';
+import StrictAccess from './components/StrictAccess';
 import { Link } from 'react-router-dom';
 // Exercise 1: Make the aplication navegable using 'BrowserRouter'
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -13,6 +14,8 @@ class App extends Component {
       <BrowserRouter>
         {/* Exercise 10: Encapsulate routes inside the Switch and order from the most specific to the most generic */}
         <Switch>
+          {/*  */}
+          <Route path="/strictaccess/:username/:password" render={(props) => <StrictAccess { ...props } /> } />
           {/* Exercise 3: Create a route to 'About' */}
           <Route path="/about" component={ About } />
           {/* Exercise 5: Create a route to 'Users' */}
