@@ -25,7 +25,9 @@ class App extends Component {
           {/* Exercise 6: Create links to 'About' and 'Users' */}
         </Switch>
         <Link to="/about">About </Link>
-        <Link to="/users">Users</Link>        
+        <Link to="/users">Users</Link>
+        {/* Exercise 12: Create a link to StrictAccess */}
+        <Link to="/strictaccess">StrictAccess</Link>        
       </BrowserRouter>
     );
   }
